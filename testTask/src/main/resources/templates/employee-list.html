@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <title>Employee adder</title>
+    <title>Employees list</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css">
 </head>
@@ -15,6 +15,7 @@
         <h3 th:text="${el.positionId}"></h3>
     </div>
     <a th:href="'/add/Employee'" class="btn btn-warning">Add new Employee</a>
+    <a th:href="'/positionlist'" class="btn btn-warning">Go to Positions list</a>
 </div>
 </body>
 </html>
