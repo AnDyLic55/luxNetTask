@@ -36,7 +36,7 @@ public class EmployeeController {
     public String addedEmployee(@RequestParam String name,@RequestParam String surname, @RequestParam Long position, Model model) {
         Employee employee = new Employee(name, surname, position);
         employeeRepository.save(employee);
-        return "redirect:/employeelist";
+        return "redirect:/positionlist";
     }
 
     @GetMapping("/employee/{id}")

@@ -6,23 +6,23 @@ import javax.persistence.*;
 public class Position {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long positionId;
+    private Long id;
     private String name;
 
     public Position() {
     }
 
-    public Position(String name) {
+    public Position(Long positionId, String name) {
+        this.id = positionId;
         this.name = name;
     }
 
     public Long getId() {
-        return positionId;
+        return id;
     }
 
     public void setId(Long id) {
-        this.positionId = positionId;
+        this.id = id;
     }
 
     public String getName() {
