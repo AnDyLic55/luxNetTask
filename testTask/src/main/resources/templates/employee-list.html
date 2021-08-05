@@ -1,0 +1,20 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Employee adder</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css">
+</head>
+<body class="text-center">
+<div class="container mt-5">
+    <h1>List of Employees</h1>
+    <div th:each="el: ${employees}" class="alert alert-info mt-2">
+        <h3><a th:href="'/employee/' + ${el.id}">Info</a></h3>
+        <h3 th:text="${el.name}">name</h3>
+        <h3 th:text="${el.surname}"></h3>
+        <h3 th:text="${el.positionId}"></h3>
+    </div>
+    <a th:href="'/add/Employee'" class="btn btn-warning">Add new Employee</a>
+</div>
+</body>
+</html>

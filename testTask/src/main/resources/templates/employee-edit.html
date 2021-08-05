@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Employee editing</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css">
+</head>
+<body class="text-center">
+<div class="container mt-5">
+    <h2>Editing employee</h2>
+    <div th:each="el : ${employees}">
+        <form method="post">
+            <input type="text" th:value="${el.name}" name="name" placeholder="Input name" class="form-control"><br>
+            <input type="text" th:value="${el.surname}" name="surname" placeholder="Input surname" class="form-control"><br>
+            <input type="text" th:value="${el.positionId}" name="position" placeholder="Input position"
+                   class="form-control"><br>
+            <button type="submit" class="btn btn-success">edit employee</button>
+        </form>
+    </div>
+</div>
+</body>
+</html>
