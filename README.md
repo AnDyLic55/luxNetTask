@@ -1,5 +1,5 @@
 # luxNetTask
 
-у файлі /testTask/src/main/resources/application.properties, написані властивості через які порти підключається локальний сервер, та База Даних, за потреби змінити ці параметри на підходящі під ваш проект
+in the file /testTask/src/main/resources/application.properties, written properties through which ports the local server is connected, and Database, if necessary, change these parameters to suit your project
 
-при розробцы я використовував open server panel, щоб під'єднати базу даних
+during development I used "open server panel" to connect a database
